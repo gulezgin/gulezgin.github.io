@@ -218,22 +218,22 @@ span{
     content: "Software Engineer";
     }
     21%,36%{
-        content:"Python Developer";
+        content:"Mid.Python Developer";
     }
     37%,50%{
-    content: "Java Developer";
+    content: "Mid.Java Developer";
     }
     51%,65%{
-    content: "Web Developer";
+    content: "Jr.Web Developer";
         }
     66%,80%{
-        content: "Machine Learning Engineer";
+        content: "Jr.Machine Learning Engineer";
     }
     81%,91%{
-    content: "Embedded Systems Developer";
+    content: "Jr.Embedded Systems Developer";
     }
     92%,100%{
-    content: "Data Scientist / Data Engineer / Web Scraper";
+    content: "Mid. Data Scientist / Data Engineer / Web Scraper";
         }
 }
 @keyframes typing{
