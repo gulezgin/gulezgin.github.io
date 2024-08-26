@@ -69,9 +69,9 @@ body{
 }
 
 section{
-    min-height: 100vh;
-    padding: 10rem 12%;
-    display: flex;
+    min-height: auto;
+    padding: 5rem 12%;
+    display: block;
     align-items: center;
     justify-content: center;
     gap: 15rem;
@@ -822,5 +822,38 @@ border-bottom: 3px solid var(--main-color);
     .footer ul li {
         padding: 0 8px;
     }
+}
+.education,
+.services,
+.project {
+    display: block;
+    padding: 5rem 12%;
+    background: var(--second-bg-color); /* Arka plan rengini görünür yapın */
+    color: var(--text-color); /* Metin rengini var olan renk düzenine uygun hale getirin */
+}
+@media (max-width: 895px) {
+    .education,
+    .services,
+    .project {
+        padding: 3rem 5%; /* Mobil cihazlarda padding değerlerini küçültün */
+        text-align: center; /* İçeriği ortalayın */
+    }
+
+    .services-container,
+    .project-container {
+        grid-template-columns: 1fr; /* Mobilde tek sütun yapın */
+    }
+
+    .service-box,
+    .project-box {
+        margin-bottom: 3rem; /* Kartlar arasına boşluk ekleyin */
+    }
+}
+.education,
+.services,
+.project {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1;
 }
 
