@@ -610,8 +610,9 @@ border-bottom: 3px solid var(--main-color);
         margin: 0 5rem;
     }
 }
+
 @media(max-width:991px){
-    header{
+    .header{
         padding: 2rem 3%;
     }
     section{
@@ -633,9 +634,6 @@ border-bottom: 3px solid var(--main-color);
     }
     .services{
         padding-bottom: 7rem;
-    }
-    .testimonials .wrapper{
-        grid-template-columns: repeat(1,1fr);
     }
     .contact form{
         flex-direction: column;
@@ -696,4 +694,45 @@ border-bottom: 3px solid var(--main-color);
         grid-template-columns: repeat(1,1fr);
     }
     
-}  
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    .home-content h1{
+        font-size: 5.5rem;
+    }
+    .home-content p{
+        font-size: 1.5rem;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .home-img img{
+        width: 70vw;
+    }
+}
+
+@media(max-width:576px){
+    html{
+        font-size: 45%;
+    }
+    .header{
+        padding: 1.5rem 3%;
+    }
+    .navbar a{
+        font-size: 1.6rem;
+        margin: 2rem 0;
+    }
+    .home-content h1{
+        font-size: 4.5rem;
+    }
+    .home-img img{
+        width: 80vw;
+    }
+    .services h2, .project h2, .contact h2{
+        font-size: 3rem;
+    }
+}
+ 
