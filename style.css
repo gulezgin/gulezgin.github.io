@@ -279,6 +279,7 @@ span{
     max-width: 1200px;
     margin: auto;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     position: relative;
 }
@@ -377,7 +378,7 @@ left: calc(50% - 1px);
 .services-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5.5rem;
+    gap: 2.5rem;
     padding: 3rem 0;
 }
 
