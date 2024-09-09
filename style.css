@@ -696,73 +696,76 @@ border-bottom: 3px solid var(--main-color);
     
 }
 
-@media(max-width:768px){
-       .container {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-    }
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .content {
-        width: 100%; 
-        margin-bottom: 20px; 
-    }
+  .content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    h1, h2 {
-        font-size: 2rem; 
-    }
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
 
-    p {
-        font-size: 1rem; 
-    }
+  p {
+    font-size: 1rem;
+  }
 
-    .navbar {
-        width: 100%; 
-    }
-    html{
-        font-size: 50%;
-    }
-    .home-content h1{
-        font-size: 5.5rem;
-    }
-    .home-content p{
-        font-size: 1.5rem;
-    }
-    .navbar{
-        width: 100%;
-    }
-    .home-img img{
-        width: 70vw;
-    }
+  .navbar {
+    width: 100%;
+  }
+  html {
+    font-size: 50%;
+  }
+  .home-content h1 {
+    font-size: 5.5rem;
+  }
+  .home-content p {
+    font-size: 1.5rem;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .home-img img {
+    width: 70vw;
+  }
 }
 
-@media(max-width:576px){
-       .grid-container {
-        grid-template-columns: 1fr; 
-    }
+@media (max-width: 576px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 
-    .grid-item {
-        width: 100%; 
-        margin-bottom: 20px;
-    }
-    html{
-        font-size: 45%;
-    }
-    .header{
-        padding: 1.5rem 3%;
-    }
-    .navbar a{
-        font-size: 1.6rem;
-        margin: 2rem 0;
-    }
-    .home-content h1{
-        font-size: 4.5rem;
-    }
-    .home-img img{
-        width: 80vw;
-    }
-    .services h2, .project h2, .contact h2{
-        font-size: 3rem;
-    }
+  .grid-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }e
+  html {
+    font-size: 45%;
+  }
+  .header {
+    padding: 1.5rem 3%;
+  }
+  .navbar a {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+  }
+  .home-content h1 {
+    font-size: 4.5rem;
+  }
+  .home-img img {
+    width: 80vw;
+  }
+  .services h2,
+  .project h2,
+  .contact h2 {
+    font-size: 3rem;
+  }
 }
  
