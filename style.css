@@ -385,61 +385,57 @@
     width: 50px;
   }
 
-/* Experience Section */
-.experience-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 30px;
+.experience {
+    padding: 100px 15px;
+    background: var(--second-bg-color);
 }
 
-.experience-icon {
+.experience .heading {
     font-size: 24px;
-    color: #3498db;
-    margin-right: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
 }
 
-.experience-content {
-    flex: 1;
-    border-left: 2px solid #3498db;
-    padding-left: 20px;
+.timeline-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-item {
     position: relative;
+    padding-left: 40px;
 }
 
-.experience-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -12px;
+.timeline-dot {
     width: 10px;
     height: 10px;
     background-color: #3498db;
     border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 5px;
 }
 
-.experience-title {
+.timeline-date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.timeline-content h3 {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin: 0;
 }
 
-.experience-subtitle {
-    font-size: 16px;
-    color: #555;
-    margin: 0;
-}
-
-.experience-dates {
-    font-size: 14px;
-    color: #999;
-    margin-top: 5px;
-}
-
-.experience-description {
+.timeline-content p {
     font-size: 14px;
     color: #666;
-    margin-top: 10px;
+    margin-top: 5px;
     line-height: 1.6;
 }
 
