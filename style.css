@@ -299,6 +299,29 @@ span {
   }
 }
 
+.experience{
+  padding: 100px 15px;
+  background: var(--second-bg-color);
+}
+
+.experience h2 {
+  margin-bottom: 5rem;
+  margin-right: 5rem;
+}
+@media (max-width: 991px) {
+  .education {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience h2 {
+    order: -1;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
 .timeline-items {
   max-width: 1200px;
   margin: auto;
