@@ -225,8 +225,12 @@
   }
   @keyframes words {
     0%,
-    20% {
+    10% {
       content: "Software Engineer";
+    }
+    11%,
+    20%{
+        content:"Artificial Intelligence Engineer";
     }
     21%,
     36% {
