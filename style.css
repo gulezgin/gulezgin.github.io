@@ -1025,7 +1025,6 @@
     bottom: 0;
   }
 
-  /* Mobil cihazlar için ek ayarlar */
   @media screen and (max-width: 768px) {
     .splash-screen {
       width: 100vw;
