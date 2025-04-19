@@ -8,19 +8,23 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
         <body>
+            <!-- Splash Screen -->
+            <div class="splash-screen">
+                <img src="indir.gif" alt="Loading...">
+            </div>
 
-     <audio id="background-music" autoplay loop muted>
-        <source src="ғʀᴀɴᴋs ᴄʜᴏɪᴄᴇ.mp3" type="audio/mpeg">
-        Tarayıcınız ses dosyasını desteklemiyor.
-    </audio>
+            <audio id="background-music" autoplay loop muted>
+                <source src="ғʀᴀɴᴋs ᴄʜᴏɪᴄᴇ.mp3" type="audio/mpeg">
+                Tarayıcınız ses dosyasını desteklemiyor.
+            </audio>
             
-     <script>
-        window.addEventListener('load', function() {
-            var audio = document.getElementById("background-music");
-            audio.muted = false;
-            audio.play();
-        });
-    </script>
+            <script>
+                window.addEventListener('load', function() {
+                    var audio = document.getElementById("background-music");
+                    audio.muted = false;
+                    audio.play();
+                });
+            </script>
             
             <header class="header">
             <a href="#home" class="logo">TARIK
