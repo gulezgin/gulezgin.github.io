@@ -1,3 +1,18 @@
+// Splash Screen kontrolü
+document.addEventListener('DOMContentLoaded', () => {
+    const splashScreen = document.querySelector('.splash-screen');
+    
+    // 3 saniye sonra splash screen'i gizle
+    setTimeout(() => {
+        splashScreen.classList.add('hidden');
+        
+        // Animasyon tamamlandıktan sonra elementi kaldır
+        setTimeout(() => {
+            splashScreen.remove();
+        }, 500); // 500ms = transition süresi
+    }, 3000); // 3000ms = 3 saniye
+});
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelector('selection');
