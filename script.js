@@ -182,8 +182,8 @@
     "I provided consultancy on IT infrastructure, website setup, server room installation, data analysis, software requirements, and software-related matters. By supporting communication and stakeholder management, I assisted with budgeting, procurement activities, and decision-making processes.":
        "BT altyapısı, web sitesi kurulumu, sunucu odası kurulumu, veri analizi, yazılım gereksinimleri ve yazılım konularında danışmanlık sağladım. İletişim ve paydaş yönetimini destekleyerek bütçeleme ve satın alma faaliyetlerine, karar alma süreçlerine yardımcı oldum.",
     "Artificial Intelligence Engineer Intern": "Yapay Zeka Mühendisi Stajyeri",
-    "As an AI Engineer intern, I am working on various machine learning and artificial intelligence projects, focusing on developing algorithms for data analysis and improving decision-making systems.":
-      "Yapay zeka mühendisi stajyeri olarak çeşitli makine öğrenmesi ve yapay zeka projelerinde çalışıyorum; veri analizi için algoritmalar geliştirmeye ve karar verme sistemlerini iyileştirmeye odaklanıyorum.",
+    "As an AI Engineer Intern, I worked on a chatbot product that translates SQL queries into natural language, focusing on developing algorithms for data analysis and improving decision-making systems. I contributed to various machine learning and AI projects.":
+      "YYapay Zeka Mühendisi Stajyeri olarak, veri analizi için algoritmalar geliştirmeye ve karar verme sistemlerini iyileştirmeye odaklanarak, SQL sorgularını konuşma diline çeviren bir chatbot ürününde görev aldım. Çeşitli makine öğrenimi ve yapay zeka projelerinde çalıştım.",
     "Software Engineer Intern": "Yazılım Mühendisi Stajyeri",
     "TÜBİTAK BİLGEM YTE, Ankara, Türkiye (Remote)": "TÜBİTAK BİLGEM YTE, Ankara, Türkiye (Uzaktan)",
     "I participated in a one-month internship, focusing on various software development projects. This experience helped me enhance my coding skills and gain practical knowledge in software engineering.":
