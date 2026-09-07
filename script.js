@@ -158,8 +158,8 @@
     "University": "Üniversite",
     "High School": "Lise",
     "School": "Okul",
-    "As a result of the university entrance exam, I was admitted to Fırat University, which opened Turkey's first Software Engineering department. I am currently in my final year and continue my studies there. I am proud to be learning from distinguished professors and studying at a faculty that is ranked globally.":
-      "Üniversite giriş sınavı sonucunda, Türkiye'nin ilk Yazılım Mühendisliği bölümünü açan Fırat Üniversitesi'ne yerleştim. Şu anda son sınıftayım ve eğitimime burada devam ediyorum. Alanında değerli hocalardan ders almaktan ve dünya sıralamasında yer alan bir fakültede okumaktan gurur duyuyorum.",
+    "Through the university entrance exam, I was admitted to Fırat University — home to Turkey's first Software Engineering department — and graduated in 2025 with a GPA of 2.77. I'm proud to have studied under distinguished professors at a globally ranked faculty.":
+      "Üniversite giriş sınavı sonucunda, Türkiye'nin ilk Yazılım Mühendisliği bölümünü açan Fırat Üniversitesi'ne kabul edildim ve buradan 2025 yılında 2.77 not ortalaması ile mezun oldum. Seçkin profesörlerden ders almaktan ve küresel sıralamada yer alan bir fakültede okumaktan gurur duyuyorumx.",
     "As a result of the TEOG exam, I succeeded in placing within the top 5% in Turkey, which allowed me to gain admission to Cumhuriyet Anatolian High School. I particularly excelled in my quantitative subjects and graduated from high school with a GPA of 78.6%.":
       "TEOG sınavı sonucunda Türkiye genelinde ilk %5'e girmeyi başardım ve bu sayede Cumhuriyet Anadolu Lisesi'ne yerleştim. Özellikle sayısal derslerde başarılı oldum ve liseden 78,6 ortalamayla mezun oldum.",
     "I attended elementary and middle school at Şeker School, which is close to my home. I had a successful school life, receiving high grades and achievement certificates. I graduated with a GPA of 80.5%.":
