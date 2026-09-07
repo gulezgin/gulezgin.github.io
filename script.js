@@ -176,8 +176,8 @@
     // experience — roles, places, descriptions
     "Freelance Web Scraper | Web Developer | Software Consultant | Python Developer":
       "Freelance Web Scraper | Web Geliştirici | Yazılım Danışmanı | Python Geliştirici",
-    "Recently, I have been working as a freelancer, assisting a company with web scraping tasks and generating income by creating and selling websites.":
-      "Son dönemde freelance olarak çalışıyorum; bir şirkete web scraping işlerinde destek veriyor, ayrıca web siteleri geliştirip satarak gelir elde ediyorum.",
+    "Recently, as a freelancer, I've been assisting a company with web scraping tasks, providing software consulting, and offering Python-based application solutions. I also generate income by building and selling websites.":
+      "Son zamanlarda serbest çalışan olarak bir şirkete web kazıma görevlerinde yardımcı oluyor, yazılım danışmanlığı veriyor ve Python uygulama çözümleri sunuyorum. Ayrıca web siteleri oluşturup satarak gelir elde ediyorum.",
     "IT Specialist | Project Assistant": "BT Uzmanı | Proje Asistanı",
     "I provided consultancy on IT infrastructure, website setup, server room installation, data analysis, software requirements, and software-related matters. By supporting communication and stakeholder management, I assisted with budgeting, procurement activities, and decision-making processes.":
        "BT altyapısı, web sitesi kurulumu, sunucu odası kurulumu, veri analizi, yazılım gereksinimleri ve yazılım konularında danışmanlık sağladım. İletişim ve paydaş yönetimini destekleyerek bütçeleme ve satın alma faaliyetlerine, karar alma süreçlerine yardımcı oldum.",
