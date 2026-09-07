@@ -1,608 +1,431 @@
 <!DOCTYPE html>
-<html lang="eng">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,
-        initial-scale=1.0">
-        <title>onemanbattalion portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Splash Screen -->
-        <div class="splash-screen" id="splash-screen">
-            <img src="indir.gif" alt="Loading...">
-        </div>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>onemanbattalion portfolio</title>
+<meta name="description" content="I am a passionate software engineer who enjoys tackling challenges and creating products with new ideas. I have a strong foundation in Python, Java, C/C++/">
+<meta name="theme-color" content="#07080c">
+<meta property="og:title" content="onemanbattalion portfolio">
+<meta property="og:description" content="I am a passionate software engineer who enjoys tackling challenges and creating products with new ideas. I have a strong foundation in Python, Java, C/C++/">
+<meta property="og:image" content="images/imaget3.jpeg.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='92' font-family='monospace' font-weight='700' fill='%23ff7a18'%3ET%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
 
-        
-        <div class="main-content" style="display: none;">
-            <audio id="background-music" autoplay loop muted>
-                <source src="ғʀᴀɴᴋs ᴄʜᴏɪᴄᴇ.mp3" type="audio/mpeg">
-                Tarayıcınız ses dosyasını desteklemiyor.
-            </audio>
-            
-            <script>
-                window.addEventListener('load', function() {
-                    var audio = document.getElementById("background-music");
-                    audio.muted = false;
-                    audio.play();
-                });
-            </script>
-            
-            <header class="header">
-            <a href="#home" class="logo">TARIK
-                <span>GÜLEZGİN</span>
-            </a>
-            <i class="bx bx-menu" id="menu-icon"></i>
-            <nav class="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#education" class="active">Education</a>
-                <a href="#services" class="active">Services</a>
-                <a href="#project" class="active">Project</a>
-                <a href="#contact" class="active">Contact</a>
-            </nav>
-            </header>
+<!-- ================= SVG icon sprite ================= -->
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.35-1.29-1.71-1.29-1.71-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.78 2.7 1.27 3.36.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.76-1.95C21.6 8.75 23 11 23 14.3V21h-4v-6c0-1.6-.03-3.7-2.25-3.7-2.26 0-2.6 1.76-2.6 3.58V21h-4V9Z"/></symbol>
+  <symbol id="i-medium" viewBox="0 0 24 24"><path fill="currentColor" d="M2.8 7.2c.02-.2-.06-.4-.2-.53L1.1 4.9v-.27h4.85l3.75 8.22 3.3-8.22h4.62v.27l-1.28 1.23a.37.37 0 0 0-.14.36v9.02c-.02.14.04.28.14.36l1.25 1.23v.27h-6.3v-.27l1.3-1.26c.12-.13.12-.17.12-.36V7.18l-3.6 9.14h-.49L4.44 7.18v6.13c-.04.25.05.5.22.68l1.68 2.04v.27H1.58v-.27l1.68-2.04c.17-.18.25-.43.21-.68V7.2Z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.82l4.71 6.23 5.46-6.23Zm-1.16 17.52h1.83L7.01 4.12H5.04l12.04 15.65Z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2Zm0 1.98c-3.15 0-3.5.01-4.74.07-1.14.05-1.76.24-2.17.4-.55.22-.94.47-1.35.88-.41.41-.66.8-.88 1.35-.16.41-.35 1.03-.4 2.17-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.05 1.14.24 1.76.4 2.17.22.55.47.94.88 1.35.41.41.8.66 1.35.88.41.16 1.03.35 2.17.4 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c1.14-.05 1.76-.24 2.17-.4.55-.22.94-.47 1.35-.88.41-.41.66-.8.88-1.35.16-.41.35-1.03.4-2.17.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.05-1.14-.24-1.76-.4-2.17a3.64 3.64 0 0 0-.88-1.35 3.64 3.64 0 0 0-1.35-.88c-.41-.16-1.03-.35-2.17-.4-1.24-.06-1.59-.07-4.74-.07Zm0 3.37a4.45 4.45 0 1 1 0 8.9 4.45 4.45 0 0 1 0-8.9Zm0 7.34a2.89 2.89 0 1 0 0-5.78 2.89 2.89 0 0 0 0 5.78Zm5.67-7.54a1.04 1.04 0 1 1-2.08 0 1.04 1.04 0 0 1 2.08 0Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M3 7.5A2.5 2.5 0 0 1 5.5 5h13A2.5 2.5 0 0 1 21 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 16.5v-9Zm.4-.6 8.6 6 8.6-6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m0 0-6-6m6 6-6 6"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.7-5.7 1.4-1.4M4.9 19.1l1.4-1.4m0-11.4L4.9 4.9m14.2 14.2-1.4-1.4"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></symbol>
+  <symbol id="i-sound-on" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9.5h3L11 6v12l-4-3.5H4v-5Zm11-.8a4.5 4.5 0 0 1 0 6.6m2.6-9.2a8 8 0 0 1 0 11.8"/></symbol>
+  <symbol id="i-sound-off" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9.5h3L11 6v12l-4-3.5H4v-5Zm11 1 4.5 4.5M19.5 10.5 15 15"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M9 9h9.5a1.5 1.5 0 0 1 1.5 1.5V20a1.5 1.5 0 0 1-1.5 1.5H9A1.5 1.5 0 0 1 7.5 20v-9.5A1.5 1.5 0 0 1 9 9Z"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M4.5 15A1.5 1.5 0 0 1 3 13.5V4a1.5 1.5 0 0 1 1.5-1.5H14A1.5 1.5 0 0 1 15.5 4v.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5 14 9l6.5 2-6.5 2-2 6.5-2-6.5L3.5 11 10 9l2-6.5Z"/></symbol>
+</svg>
 
-            <section class="home" id="home">
-            <div class="home-content">
-                <h1>Hey, It's <span>Tarık Gülezgin</span> </h1>
-                <h3 class="text-animation">I'm a <span></span> </h3>
-                <p>
-                    I am a passionate software engineer who enjoys tackling challenges and creating products with new ideas. 
-                    I have a strong foundation in Python, Java, C/C++/C#, JavaScript, and HTML/CSS.
-                    My career in computer technology began with cybersecurity and has continued with embedded systems. Currently, I am advancing in areas such as web scraping, artificial intelligence, and web development.
-                    I am looking for opportunities to work on various projects and contribute to the technology sector.
-                </p>
+<!-- ================= Preloader ================= -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <div class="preloader__name"><span>T</span><span>A</span><span>R</span><span>I</span><span>K</span></div>
+    <div class="preloader__bar"><i id="preloader-fill"></i></div>
+    <div class="preloader__meta"><span>loading portfolio</span><span id="preloader-num">0%</span></div>
+  </div>
+</div>
 
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/tar%C4%B1k-g%C3%BClezgin/"><i class="bx bxl-linkedin"></i></a>
-                    <a href="https://github.com/gulezgin"><i class="bx bxl-github" ></i></a>
-                    <a href="https://medium.com/@gulezgin"><i class="bx bxl-medium" ></i></a>
-                    <a href="https://x.com/trkglzgn"><i class="bx bx-x" ></i></a>
-                    <a href="https://www.instagram.com/trkgulezgin/"><i class="bx bxl-instagram" ></i></a>
-                </div>
-                <div class="btn-group">
-                    <a href="#" class="btn">Hire</a>
-                    <a href="cv/Tarık_Gulezgin_CV.pdf" class="btn" download="Tarık_Gulezgin_CV.pdf">Download CV</a>
-                </div>
-            </div>
-                <div class="home-img">
-                    <img src="images/imaget3.jpeg.jpg" alt="">
-                </div>
-            </section>
+<!-- ================= Ambient layers ================= -->
+<div class="fx" aria-hidden="true">
+  <canvas id="net"></canvas>
+  <span class="blob blob--1"></span>
+  <span class="blob blob--2"></span>
+  <span class="blob blob--3"></span>
+  <span class="grid-lines"></span>
+  <span class="grain"></span>
+</div>
 
-            <section class="education" id="education" >
-                <h2 class="heading">Education</h2>
-                <div class="timeline-items">
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot"> </div>
-                            <div class="timeline-date">2025
-                            </div>
-                            <div class="timeline-content">
-                                <h3>University</h3>
-                                <p>As a result of the university entrance exam, I was admitted to Fırat University, which opened Turkey's first Software Engineering department.
-                                    I am currently in my final year and continue my studies there.
-                                    I am proud to be learning from distinguished professors and studying at a faculty that is ranked globally.
-                            </div>
-                        
-                    </div>
+<audio id="bg-music" loop preload="none" src="ғʀᴀɴᴋs ᴄʜᴏɪᴄᴇ.mp3"></audio>
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                            <div class="timeline-date">2019
-                            </div>
-                            <div class="timeline-content">
-                                <h3>High School</h3>
-                                <p>As a result of the TEOG exam, I succeeded in placing within the top 5% in Turkey, which allowed me to gain admission to Cumhuriyet Anatolian High School.
-                                    I particularly excelled in my quantitative subjects and graduated from high school with a GPA of 78.6%.
-                                 </p>
-                            </div>
-                        
-                    </div>
+<!-- ================= Header ================= -->
+<header class="header" id="header">
+  <a href="#home" class="logo" data-magnetic>
+    <span class="logo__mark">TG</span>
+    <span class="logo__text">TARIK <b>GÜLEZGİN</b></span>
+  </a>
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot">  </div>
-                            <div class="timeline-date">2015
-                            </div>
-                            <div class="timeline-content">
-                                <h3>School</h3>
-                                <p>I attended elementary and middle school at Şeker School, which is close to my home. 
-                                   I had a successful school life, receiving high grades and achievement certificates. I graduated with a GPA of 80.5%.
-                                </p>
-                            </div>
-                       
-                    </div>
-                    
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav__link is-active">Home</a>
+    <a href="#education" class="nav__link">Education</a>
+    <a href="#experience" class="nav__link">Experience</a>
+    <a href="#services" class="nav__link">Services</a>
+    <a href="#project" class="nav__link">Project</a>
+    <a href="#contact" class="nav__link">Contact</a>
+  </nav>
 
-                </div>
-            </section>
-            
-            <section class="experience" id="experience">
-                <h2 class="heading">Experience</h2>
-                <div class="timeline-items">
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-dot"> </div>
-                        <div class="timeline-date">February 2024 - Nowadays</div>
-                        <div class="timeline-content">
-                            <h3>Freelance Web Scraper | Web Developer | Software Consultant | Python Developer</h3>
-                            <p>Freelancer</p>
-                            <p>Recently, I have been working as a freelancer, assisting a company with web scraping tasks and generating income by creating and selling websites. </p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-dot"> </div>
-                        <div class="timeline-date">April 2025 - Nowadays</div>
-                        <div class="timeline-content">
-                            <h3>IT Specialist / Project Assistant</h3>
-                            <p>GOPA Worldwide Consultants</p>
-                            <p></p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-dot"> </div>
-                        <div class="timeline-date">September 2024 - March 2025</div>
-                        <div class="timeline-content">
-                            <h3>Artificial Intelligence Engineer Intern</h3>
-                            <p>Bigoen, İzmir, Türkiye</p>
-                            <p>As an AI Engineer intern, I am working on various machine learning and artificial intelligence projects, focusing on developing algorithms for data analysis and improving decision-making systems.</p>
-                        </div>
-                    </div>
-            
-                    <div class="timeline-item">
-                        <div class="timeline-dot"> </div>
-                        <div class="timeline-date">October 2023 - October 2023</div>
-                        <div class="timeline-content">
-                            <h3>Software Engineer Intern</h3>
-                            <p>TÜBİTAK BİLGEM YTE, Ankara, Türkiye (Remote)</p>
-                            <p>I participated in a one-month internship, focusing on various software development projects. This experience helped me enhance my coding skills and gain practical knowledge in software engineering.</p>
-                        </div>
-                    </div>
-            
-                    <div class="timeline-item">
-                        <div class="timeline-dot"> </div>
-                        <div class="timeline-date">September 2023 - October 2023</div>
-                        <div class="timeline-content">
-                            <h3>Computer Vision Engineer Intern</h3>
-                            <p>Başaran İleri Teknoloji Aselsannet Bayii, Malatya, Türkiye</p>
-                            <p>My second internship was at Başaran İleri Teknoloji, a branch of Aselsan located in Malatya.
-                                    I worked in the telecommunications field and developed a small-scale image processing and facial recognition project, considering the operation of surveillance cameras. 
-                                    During this process, I gained experience not only in technical skills but also in communication and project management.
-                                </p>
-                        </div>
-                    </div>
-            
-                    <div class="timeline-item">
-                        <div class="timeline-dot"> </div>
-                        <div class="timeline-date">August 2022 - September 2022</div>
-                        <div class="timeline-content">
-                            <h3>Embedded Systems Engineer Intern</h3>
-                            <p>Tümer Mühendislik, Ankara, Türkiye</p>
-                            <p>My first internship experience took place at Tümer Engineering, located in Hacettepe Technopolis.
-                                    I worked on an AHRS system project for avionics systems, specifically for UAVs, in the defense industry.
-                                    This project was a challenging and technically complex process, but through this experience, I developed my problem-solving skills and gained a deeper understanding of the importance of teamwork.
-                                </p>
-                        </div>
-                    </div>
-            
-                </div>
-            </section>
-            
-            <section class="services" id="services">
-                <h2 class="heading">Services</h2>
-                <div class="services-container">
-                    <div class="service-box">
-                        <div class="service-info">
-                            <h4>Python Developer</h4>
-                            <p>As a Python Developer, I specialize in designing and developing robust applications using Python.
-                                 With a strong foundation in various Python libraries and frameworks, I excel in creating scalable and efficient solutions.
-                                  My experience includes developing web applications, automating tasks, and implementing data processing pipelines.
-                                   I am passionate about leveraging Python to solve complex problems and continuously improving my skills through hands-on projects and learning. </p>
-                        </div>
-                    </div>
-            
-                    <div class="service-box">
-                        <div class="service-info">
-                            <h4>Java Developer</h4>
-                            <p>As a Java Developer, I focus on building high-performance, scalable applications using Java. 
-                                My expertise includes working with Java frameworks and technologies such as Spring , and I have experience in developing both web and desktop applications. 
-                                I am skilled in designing efficient algorithms, managing databases, and ensuring code quality through best practices. Passionate about problem-solving and software design, I continuously seek to enhance my skills and contribute to innovative projects.</p>
-                        </div>
-                    </div>
-            
-                    <div class="service-box">
-                        <div class="service-info">
-                            <h4>Web Developer</h4>
-                            <p>As a front-end developer, I excel in creating visually appealing and user-friendly websites using HTML, CSS, and JavaScript. 
-                                I am skilled in building responsive layouts, implementing interactive features, and ensuring cross-browser compatibility. 
-                                My experience extends to WordPress development, where I customize themes, build plugins, and optimize websites for performance and SEO. 
-                                My goal is to combine technical expertise with creative design to deliver engaging web experiences and enhance user satisfaction. </p>
-                        </div>
-                    </div>
-            
-                    <div class="service-box">
-                        <div class="service-info">
-                            <h4>Machine Learning Engineer</h4>
-                            <p>As a Machine Learning Engineer, I specialize in designing, developing, and deploying machine learning models to solve complex problems and drive data-driven decisions. 
-                                My expertise includes working with a variety of machine learning frameworks and libraries such as TensorFlow, Natural Language Processing (NLP), PyTorch, and scikit-learn.
-                                 I am proficient in data preprocessing, feature engineering, model training, and evaluation. Passionate about leveraging algorithms and statistical methods, I continuously explore new techniques and technologies to enhance model performance and deliver impactful solutions. </p>
-                        </div>
-                    </div>
+  <div class="header__actions">
+    <button class="icon-btn" id="sound-toggle" type="button" aria-pressed="false" aria-label="Toggle background music" title="Background music">
+      <svg class="ico ico--on"><use href="#i-sound-on"></use></svg>
+      <svg class="ico ico--off"><use href="#i-sound-off"></use></svg>
+    </button>
+    <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle colour theme" title="Theme">
+      <svg class="ico ico--sun"><use href="#i-sun"></use></svg>
+      <svg class="ico ico--moon"><use href="#i-moon"></use></svg>
+    </button>
+    <a href="#contact" class="btn btn--sm btn--solid header__cta" data-magnetic>Hire</a>
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
 
-                    <div class="service-box">
-                        <div class="service-info">
-                            <h4>Embedded Systems Developer</h4>
-                            <p>As an Embedded Systems Developer, I specialize in designing and implementing robust embedded solutions for various applications. 
-                                My expertise includes working with microcontrollers, real-time operating systems (RTOS), and low-level programming in C/C++ to develop efficient and reliable firmware. 
-                                I have experience in integrating hardware with software, optimizing system performance, and debugging complex issues. 
-                                Passionate about creating innovative and high-performance embedded systems, I continuously seek to advance my skills and contribute to cutting-edge projects. </p>
-                        </div>
-                    </div>
+<main>
 
-                    <div class="service-box">
-                        <div class="service-info">
-                            <h4>Software Tester</h4>
-                            <p>As a Software Tester, I am dedicated to ensuring the quality and reliability of software applications through comprehensive testing and evaluation. 
-                                 My expertise includes creating detailed test plans, executing test cases, and identifying and documenting defects. 
-                                 Passionate about improving user experiences and software quality, I continuously refine my skills and stay updated with industry best practices. </p>
-                        </div>
-                    </div>
+<!-- ================= Home ================= -->
+<section class="hero section" id="home">
+  <div class="hero__grid">
+    <div class="hero__content">
+      <h1 class="hero__title" data-split>Hey, It's <em>Tarık Gülezgin</em></h1>
 
-                    <div class="service-box">
-                        <div class="service-info">
-                            <h4>Cybersecurity Engineer</h4>
-                            <p>As a Cybersecurity Engineer, I am committed to protecting organizations from cyber threats and ensuring the security of their digital assets. 
-                                My expertise includes designing and implementing security measures, conducting risk assessments, and responding to security incidents. 
-                                I am proficient in various cybersecurity tools and technologies, including firewalls, intrusion detection systems (IDS), and encryption protocols. 
-                                With a strong foundation in network security, vulnerability management, and incident response, I focus on safeguarding information systems and maintaining compliance with industry standards.
-                                 Passionate about staying ahead of evolving threats, I continuously enhance my skills and knowledge in cybersecurity. </p>
-                        </div>
-                    </div>
-            
-            
-                    <div class="service-box">
-                        <div class="service-info">
-                            <h4>Data Scientist / Data Engineer / Web Scraper </h4>
-                            <p>As a Data Scientist, Data Engineer, and Web Scraper, I specialize in extracting, processing, and analyzing data to drive informed decision-making and uncover valuable insights.
-                                 My expertise spans data wrangling, statistical analysis, and machine learning, utilizing tools such as Python, R, SQL, and various data visualization libraries. 
-                                 I am skilled in designing and implementing data pipelines, managing large datasets, and developing web scraping solutions to collect and analyze web-based data.
-                                  With a strong focus on transforming raw data into actionable intelligence, I continuously seek to improve my skills and stay abreast of the latest advancements in data science and engineering.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <p class="hero__role" data-reveal style="--d:.15s">
+        <span class="hero__role-prefix">&gt;</span>
+        I'm a <span class="typewriter" id="typewriter"></span><span class="caret"></span>
+      </p>
 
-            <section class="project" id="project">
-                <h2 class="heading">Projects</h2>
-                <div class="project-container">
-                    <div class="project-box">
-                        <div class="project-info">
-                            <h4>Remote-access-trojan</h4>
-                            <a href="https://github.com/gulezgin/Remote-access-trojan"> <img src="images/rat.jpeg" alt="RAT"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+      <p class="hero__lead" data-reveal style="--d:.25s">I am a passionate software engineer who enjoys tackling challenges and creating products with new ideas. I have a strong foundation in Python, Java, C/C++/C#, JavaScript, and HTML/CSS. My career in computer technology began with cybersecurity and has continued with embedded systems. Currently, I am advancing in areas such as web scraping, artificial intelligence, and web development. I am looking for opportunities to work on various projects and contribute to the technology sector.</p>
 
-                    <div class="project-box">
-                        <div class="project-info">
-                            <h4>Face Recognition</h4>
-                            <a href="https://github.com/gulezgin/facial-recognition"> <img src="images/frec.jpeg" alt="Face recognition"> </a>
-                
-                        <p>
+      <ul class="socials" data-reveal style="--d:.35s">
+        <li><a href="https://www.linkedin.com/in/tar%C4%B1k-g%C3%BClezgin/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico"><use href="#i-linkedin"></use></svg></a></li>
+        <li><a href="https://github.com/gulezgin" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ico"><use href="#i-github"></use></svg></a></li>
+        <li><a href="https://medium.com/@gulezgin" target="_blank" rel="noopener" aria-label="Medium"><svg class="ico"><use href="#i-medium"></use></svg></a></li>
+        <li><a href="https://x.com/trkglzgn" target="_blank" rel="noopener" aria-label="X"><svg class="ico"><use href="#i-x"></use></svg></a></li>
+        <li><a href="https://www.instagram.com/trkgulezgin/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico"><use href="#i-instagram"></use></svg></a></li>
+      </ul>
 
-                        </p>
-                        </div>
-                    </div>
+      <div class="hero__actions" data-reveal style="--d:.45s">
+        <a href="#contact" class="btn btn--solid" data-magnetic>Hire <svg class="ico"><use href="#i-arrow"></use></svg></a>
+        <a href="cv/Tarık_Gulezgin_CV.pdf" download class="btn btn--ghost" data-magnetic>Download CV <svg class="ico"><use href="#i-download"></use></svg></a>
+      </div>
+    </div>
 
-                    <div class="project-box">
-                        <div class="project-info">
-                            <h4>Freeleance Scrape</h4>
-                            <a href="https://github.com/gulezgin/freeleance-scraper"> <img src="images/fresc.jpeg" alt="Web Crawling"> </a>
-                
-                        <p>
+    <div class="hero__visual" data-reveal style="--d:.2s">
+      <div class="portrait" data-tilt>
+        <span class="portrait__glow"></span>
+        <img src="images/imaget3.jpeg.jpg" alt="Tarık Gülezgin" width="520" height="693">
+        <span class="portrait__scan"></span>
+        <span class="portrait__frame"></span>
+      </div>
 
-                        </p>
-                        </div>
-                    </div>
+    </div>
+  </div>
 
-                    <div class="project-box">
-                        <div class="project-info">
-                            <h4>Earthquake Notification Telegram Bot</h4>
-                            <a href="https://github.com/gulezgin/earthquake-notification-telegram-bot"> <img src="images/deptgbot.jpeg" alt="Earthquake Notification Telegram Bot"> </a>
-                
-                        <p>
-                            
-                        </p>
-                        </div>
-                    </div>
+  <a href="#education" class="scroll-cue" aria-label="Scroll to next section"><span></span>scroll</a>
+</section>
 
-                    <div class="project-box">
-                        <div class="project-info">
-                            <h4>Chaotic Pendulum</h4>
-                            <a href="https://github.com/gulezgin/Chaotic-Pendulum"> <img src="images/chpe.jpg" alt="Chaotic Pendulum"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+<!-- ================= Marquee ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track"><span>Python</span><i>◆</i><span>Java</span><i>◆</i><span>C / C++ / C#</span><i>◆</i><span>JavaScript</span><i>◆</i><span>HTML / CSS</span><i>◆</i><span>TensorFlow</span><i>◆</i><span>PyTorch</span><i>◆</i><span>scikit-learn</span><i>◆</i><span>NLP</span><i>◆</i><span>Spring</span><i>◆</i><span>WordPress</span><i>◆</i><span>SQL</span><i>◆</i><span>R</span><i>◆</i><span>Web Scraping</span><i>◆</i><span>RTOS</span><i>◆</i><span>Python</span><i>◆</i><span>Java</span><i>◆</i><span>C / C++ / C#</span><i>◆</i><span>JavaScript</span><i>◆</i><span>HTML / CSS</span><i>◆</i><span>TensorFlow</span><i>◆</i><span>PyTorch</span><i>◆</i><span>scikit-learn</span><i>◆</i><span>NLP</span><i>◆</i><span>Spring</span><i>◆</i><span>WordPress</span><i>◆</i><span>SQL</span><i>◆</i><span>R</span><i>◆</i><span>Web Scraping</span><i>◆</i><span>RTOS</span><i>◆</i></div>
+</div>
 
-                     <div class="project-box">
-                        <div class="project-info">
-                            <h4>Netflix Data Analysis</h4>
-                            <a href="https://github.com/gulezgin/Netflix-Data-Analysis"> <img src="images/netflix.png" alt="Netflix Data Analysis"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+<!-- ================= At a glance ================= -->
+<section class="band" aria-label="Overview">
+  <div class="stats">
+    <div class="stat" data-reveal><b class="counter" id="stat-projects" data-count="0">0</b><span>Projects</span></div>
+    <div class="stat" data-reveal style="--d:.08s"><b class="counter" id="stat-experience" data-count="0">0</b><span>Experience</span></div>
+    <div class="stat" data-reveal style="--d:.16s"><b class="counter" id="stat-services" data-count="0">0</b><span>Services</span></div>
+    <div class="stat" data-reveal style="--d:.24s"><b class="counter" id="stat-education" data-count="0">0</b><span>Education</span></div>
+  </div>
+</section>
 
-                     <div class="project-box">
-                        <div class="project-info">
-                            <h4>Eye Fatigue Analysis Detection</h4>
-                            <a href="https://github.com/gulezgin/eye-fatigue-analysis-Detection"> <img src="images/eye.jpeg" alt="Eye Fatigue Analysis Detection"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+<!-- ================= Education ================= -->
+<section class="section journey" id="education">
+  <div class="section__head">
+    <p class="section__mark" aria-hidden="true"><svg class="ico"><use href="#i-spark"></use></svg><i></i></p>
+    <h2 class="section__title" data-split>Education</h2>
+  </div>
 
-                     <div class="project-box">
-                        <div class="project-info">
-                            <h4>Tensorflow Object Detection</h4>
-                            <a href="https://github.com/gulezgin/tensorflow-objectDetection"> <img src="images/tensorflowpng.png" alt="Tensorflow Object Detection"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+  <div class="timeline is-active">
+    <article class="tl" data-reveal>
+      <div class="tl__dot"></div>
+      <div class="tl__date">2025</div>
+      <div class="tl__card">
+        <h3>University</h3>
+        <p>As a result of the university entrance exam, I was admitted to Fırat University, which opened Turkey's first Software Engineering department. I am currently in my final year and continue my studies there. I am proud to be learning from distinguished professors and studying at a faculty that is ranked globally.</p>
+      </div>
+    </article>
 
-                     <div class="project-box">
-                        <div class="project-info">
-                            <h4>Voice Chatbot GCP-OPENAI</h4>
-                            <a href="https://github.com/gulezgin/voice-chatbot-GCP-OPENAI"> <img src="images/gptvoice.png" alt="Voice Chatbot GCP-OPENAI"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+    <article class="tl" data-reveal>
+      <div class="tl__dot"></div>
+      <div class="tl__date">2019</div>
+      <div class="tl__card">
+        <h3>High School</h3>
+        <p>As a result of the TEOG exam, I succeeded in placing within the top 5% in Turkey, which allowed me to gain admission to Cumhuriyet Anatolian High School. I particularly excelled in my quantitative subjects and graduated from high school with a GPA of 78.6%.</p>
+      </div>
+    </article>
 
-                    <div class="project-box">
-                        <div class="project-info">
-                            <h4>WEBSITE</h4>
-                            <a href="https://www.yusufgulezgin.av.tr/"> <img src="images/websitea.png" alt="WEBSITE"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
-    
-                    <div class="project-box">
-                        <div class="project-info">
-                            <h4>pdfQuestion</h4>
-                            <a href="https://github.com/gulezgin/pdfQuestion-langchain"> <img src="images/PDF-LangChain.jpg" alt="pdfQuestion"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+    <article class="tl" data-reveal>
+      <div class="tl__dot"></div>
+      <div class="tl__date">2015</div>
+      <div class="tl__card">
+        <h3>School</h3>
+        <p>I attended elementary and middle school at Şeker School, which is close to my home. I had a successful school life, receiving high grades and achievement certificates. I graduated with a GPA of 80.5%.</p>
+      </div>
+    </article>
+  </div>
+</section>
 
-                    <div class="project-box">
-                        <div class="project-info">
-                            <h4>Otto Robot</h4>
-                            <a href="https://github.com/gulezgin/otto-robot"> <img src="images/otto-robot.png" alt="otto-robot"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+<!-- ================= Experience ================= -->
+<section class="section journey" id="experience">
+  <div class="section__head">
+    <p class="section__mark" aria-hidden="true"><svg class="ico"><use href="#i-spark"></use></svg><i></i></p>
+    <h2 class="section__title" data-split>Experience</h2>
+  </div>
 
-                     <div class="project-box">
-                        <div class="project-info">
-                            <h4>TR Super League</h4>
-                            <a href="https://github.com/gulezgin/super_league"> <img src="images/trsuperlig.jpg" alt="TRsuperlig"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+  <div class="timeline is-active">
+    <article class="tl" data-reveal>
+      <div class="tl__dot"></div>
+      <div class="tl__date">February 2024 - Nowadays</div>
+      <div class="tl__card">
+        <h3>Freelance Web Scraper | Web Developer | Software Consultant | Python Developer</h3>
+        <p class="tl__org">Freelancer</p>
+        <p>Recently, I have been working as a freelancer, assisting a company with web scraping tasks and generating income by creating and selling websites.</p>
+      </div>
+    </article>
 
-                     <div class="project-box">
-                        <div class="project-info">
-                            <h4>Api- Spotify Transfer Soundcloud</h4>
-                            <a href="https://github.com/gulezgin/API-spotify-transfer-soundcloud-"> <img src="images/SSC.png" alt="api-spotify-transfer-soundcloud"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+    <article class="tl" data-reveal>
+      <div class="tl__dot"></div>
+      <div class="tl__date">April 2025 - Nowadays</div>
+      <div class="tl__card">
+        <h3>IT Specialist / Project Assistant</h3>
+        <p class="tl__org">GOPA Worldwide Consultants</p>
+      </div>
+    </article>
 
-                    <div class="project-box">
-                        <div class="project-info">
-                            <h4>Vanna AI</h4>
-                            <a href="https://github.com/gulezgin/vannaAI"> <img src="images/vannaai.png" alt="vannaai"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div> 
+    <article class="tl" data-reveal>
+      <div class="tl__dot"></div>
+      <div class="tl__date">September 2024 - March 2025</div>
+      <div class="tl__card">
+        <h3>Artificial Intelligence Engineer Intern</h3>
+        <p class="tl__org">Bigoen, İzmir, Türkiye</p>
+        <p>As an AI Engineer intern, I am working on various machine learning and artificial intelligence projects, focusing on developing algorithms for data analysis and improving decision-making systems.</p>
+      </div>
+    </article>
 
-                    <div class="project-box">
-                        <div class="project-info">
-                            <h4>Face Tracking Shoter</h4>
-                            <a href="https://github.com/gulezgin/Face-Tracking-shoter"> <img src="images/facetrackingshot.png" alt="Face-Tracking-shoter"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div> 
+    <article class="tl" data-reveal>
+      <div class="tl__dot"></div>
+      <div class="tl__date">October 2023 - October 2023</div>
+      <div class="tl__card">
+        <h3>Software Engineer Intern</h3>
+        <p class="tl__org">TÜBİTAK BİLGEM YTE, Ankara, Türkiye (Remote)</p>
+        <p>I participated in a one-month internship, focusing on various software development projects. This experience helped me enhance my coding skills and gain practical knowledge in software engineering.</p>
+      </div>
+    </article>
 
-                     <div class="project-box">
-                        <div class="project-info">
-                            <h4>WEBSITE</h4>
-                            <a href="https://www.iykinsaat.com/"> <img src="images/iyk.png" alt="WEBSITE"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+    <article class="tl" data-reveal>
+      <div class="tl__dot"></div>
+      <div class="tl__date">September 2023 - October 2023</div>
+      <div class="tl__card">
+        <h3>Computer Vision Engineer Intern</h3>
+        <p class="tl__org">Başaran İleri Teknoloji Aselsannet Bayii, Malatya, Türkiye</p>
+        <p>My second internship was at Başaran İleri Teknoloji, a branch of Aselsan located in Malatya. I worked in the telecommunications field and developed a small-scale image processing and facial recognition project, considering the operation of surveillance cameras. During this process, I gained experience not only in technical skills but also in communication and project management.</p>
+      </div>
+    </article>
 
-                      <div class="project-box">
-                        <div class="project-info">
-                            <h4>Neuro Linguistic Programming</h4>
-                            <a href="https://github.com/gulezgin/-nlp-project-alfa"> <img src="images/nlp.png" alt="NLP"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+    <article class="tl" data-reveal>
+      <div class="tl__dot"></div>
+      <div class="tl__date">August 2022 - September 2022</div>
+      <div class="tl__card">
+        <h3>Embedded Systems Engineer Intern</h3>
+        <p class="tl__org">Tümer Mühendislik, Ankara, Türkiye</p>
+        <p>My first internship experience took place at Tümer Engineering, located in Hacettepe Technopolis. I worked on an AHRS system project for avionics systems, specifically for UAVs, in the defense industry. This project was a challenging and technically complex process, but through this experience, I developed my problem-solving skills and gained a deeper understanding of the importance of teamwork.</p>
+      </div>
+    </article>
+  </div>
+</section>
 
-                     <div class="project-box">
-                        <div class="project-info">
-                            <h4>FaceAuth-Vision</h4>
-                            <a href="https://github.com/gulezgin/FaceAuth-Vision---Akilli-Yuz-Tanima-ve-Kimlik-Dogrulama-Sistemi"> <img src="images/faceauth.jpg" alt="faceauth"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+<!-- ================= Services ================= -->
+<section class="section expertise" id="services">
+  <div class="section__head">
+    <p class="section__mark" aria-hidden="true"><svg class="ico"><use href="#i-spark"></use></svg><i></i></p>
+    <h2 class="section__title" data-split>Services</h2>
+  </div>
 
-                           <div class="project-box">
-                        <div class="project-info">
-                            <h4>CrewAI</h4>
-                            <a href="https://github.com/gulezgin/simple-crewai-improvements"> <img src="images/crewai.png" alt="crewai"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+  <div class="cards">
+    <article class="card" data-reveal data-spotlight>
+      <span class="card__num">01</span>
+      <h3>Python Developer</h3>
+      <p>As a Python Developer, I specialize in designing and developing robust applications using Python. With a strong foundation in various Python libraries and frameworks, I excel in creating scalable and efficient solutions. My experience includes developing web applications, automating tasks, and implementing data processing pipelines. I am passionate about leveraging Python to solve complex problems and continuously improving my skills through hands-on projects and learning.</p>
+    </article>
 
-                           <div class="project-box">
-                        <div class="project-info">
-                            <h4>PDF-MASTER</h4>
-                            <a href="https://github.com/gulezgin/online-PDFMaster"> <img src="images/pdfmaster.png" alt="pdfmaster"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+    <article class="card" data-reveal data-spotlight>
+      <span class="card__num">02</span>
+      <h3>Java Developer</h3>
+      <p>As a Java Developer, I focus on building high-performance, scalable applications using Java. My expertise includes working with Java frameworks and technologies such as Spring , and I have experience in developing both web and desktop applications. I am skilled in designing efficient algorithms, managing databases, and ensuring code quality through best practices. Passionate about problem-solving and software design, I continuously seek to enhance my skills and contribute to innovative projects.</p>
+    </article>
 
+    <article class="card" data-reveal data-spotlight>
+      <span class="card__num">03</span>
+      <h3>Web Developer</h3>
+      <p>As a front-end developer, I excel in creating visually appealing and user-friendly websites using HTML, CSS, and JavaScript. I am skilled in building responsive layouts, implementing interactive features, and ensuring cross-browser compatibility. My experience extends to WordPress development, where I customize themes, build plugins, and optimize websites for performance and SEO. My goal is to combine technical expertise with creative design to deliver engaging web experiences and enhance user satisfaction.</p>
+    </article>
 
-                             <div class="project-box">
-                        <div class="project-info">
-                            <h4>Sentiment Analysis</h4>
-                            <a href="https://github.com/gulezgin/Sentiment-Analysis-exercise"> <img src="images/sentimentanalysis.jpg" alt="Sentiment-Analysis"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+    <article class="card" data-reveal data-spotlight>
+      <span class="card__num">04</span>
+      <h3>Machine Learning Engineer</h3>
+      <p>As a Machine Learning Engineer, I specialize in designing, developing, and deploying machine learning models to solve complex problems and drive data-driven decisions. My expertise includes working with a variety of machine learning frameworks and libraries such as TensorFlow, Natural Language Processing (NLP), PyTorch, and scikit-learn. I am proficient in data preprocessing, feature engineering, model training, and evaluation. Passionate about leveraging algorithms and statistical methods, I continuously explore new techniques and technologies to enhance model performance and deliver impactful solutions.</p>
+    </article>
 
-                                 <div class="project-box">
-                        <div class="project-info">
-                            <h4>YouTube Downloader</h4>
-                            <a href="https://github.com/gulezgin/youtube-downloader-v0.1"> <img src="images/utub.png" alt="youtube-downloader-v0.1"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
-                    
-                                <div class="project-box">
-                        <div class="project-info">
-                            <h4>Speech-to-Text</h4>
-                            <a href="https://github.com/gulezgin/speech-to-text_v0.1"> <img src="images/stotxt.png" alt="speech-to-text_v0.1"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
+    <article class="card" data-reveal data-spotlight>
+      <span class="card__num">05</span>
+      <h3>Embedded Systems Developer</h3>
+      <p>As an Embedded Systems Developer, I specialize in designing and implementing robust embedded solutions for various applications. My expertise includes working with microcontrollers, real-time operating systems (RTOS), and low-level programming in C/C++ to develop efficient and reliable firmware. I have experience in integrating hardware with software, optimizing system performance, and debugging complex issues. Passionate about creating innovative and high-performance embedded systems, I continuously seek to advance my skills and contribute to cutting-edge projects.</p>
+    </article>
 
-                     <div class="project-box">
-                        <div class="project-info">
-                            <h4>Hukuk Asistanı Themis - Proof of Concept-r</h4>
-                            <a href="https://github.com/gulezgin/Hukuk-Asistan-Themis-Proof-of-Concept-"> <img src="images/themis.png" alt="Hukuk-Asistan-Themis-Proof-of-Concept-"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div> 
+    <article class="card" data-reveal data-spotlight>
+      <span class="card__num">06</span>
+      <h3>Software Tester</h3>
+      <p>As a Software Tester, I am dedicated to ensuring the quality and reliability of software applications through comprehensive testing and evaluation. My expertise includes creating detailed test plans, executing test cases, and identifying and documenting defects. Passionate about improving user experiences and software quality, I continuously refine my skills and stay updated with industry best practices.</p>
+    </article>
 
-                     <div class="project-box">
-                        <div class="project-info">
-                            <h4>WordPool TR-EN</h4>
-                            <a href="https://github.com/gulezgin/WordPool-TR-EN"> <img src="images/eng-tr.png" alt="WordPool-TR-EN"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div> 
+    <article class="card" data-reveal data-spotlight>
+      <span class="card__num">07</span>
+      <h3>Cybersecurity Engineer</h3>
+      <p>As a Cybersecurity Engineer, I am committed to protecting organizations from cyber threats and ensuring the security of their digital assets. My expertise includes designing and implementing security measures, conducting risk assessments, and responding to security incidents. I am proficient in various cybersecurity tools and technologies, including firewalls, intrusion detection systems (IDS), and encryption protocols. With a strong foundation in network security, vulnerability management, and incident response, I focus on safeguarding information systems and maintaining compliance with industry standards. Passionate about staying ahead of evolving threats, I continuously enhance my skills and knowledge in cybersecurity.</p>
+    </article>
 
-                        <div class="project-box">
-                        <div class="project-info">
-                            <h4>WEBSITE</h4>
-                            <a href="https://puturgerentacar.com.tr/"> <img src="images/rentacar.png" alt="WEBSITE"> </a>
-                
-                        <p>
-                        </p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
+    <article class="card" data-reveal data-spotlight>
+      <span class="card__num">08</span>
+      <h3>Data Scientist / Data Engineer / Web Scraper</h3>
+      <p>As a Data Scientist, Data Engineer, and Web Scraper, I specialize in extracting, processing, and analyzing data to drive informed decision-making and uncover valuable insights. My expertise spans data wrangling, statistical analysis, and machine learning, utilizing tools such as Python, R, SQL, and various data visualization libraries. I am skilled in designing and implementing data pipelines, managing large datasets, and developing web scraping solutions to collect and analyze web-based data. With a strong focus on transforming raw data into actionable intelligence, I continuously seek to improve my skills and stay abreast of the latest advancements in data science and engineering.</p>
+    </article>
+  </div>
+</section>
 
-            <section class="contact" id="contact">
-                <h2 class="heading">Contact <span>Me</span> </h2>
-                <form action="">
-                    <div class="input-group">
-                    <div class="input-box">
-                        <input type="text" placeholder="Full Name">
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="input-box">
-                        <input type="number" placeholder="Phone Number">
-                        <input type="text" placeholder="Subject">
-                    </div>
-                    </div>
-                    <div class="input-group-2">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                        <input type="submit" value="Send Message" class="btn">
-                    </div>
-                </form>
-            </section>
+<!-- ================= Projects ================= -->
+<section class="section work" id="project">
+  <div class="section__head">
+    <p class="section__mark" aria-hidden="true"><svg class="ico"><use href="#i-spark"></use></svg><i></i></p>
+    <h2 class="section__title" data-split>Projects</h2>
+  </div>
 
-            <footer class="footer">
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/tar%C4%B1k-g%C3%BClezgin/"><i class="bx bxl-linkedin"></i></a>
-                    <a href="https://github.com/gulezgin"><i class="bx bxl-github" ></i></a>
-                    <a href="https://medium.com/@gulezgin"><i class="bx bxl-medium" ></i></a>
-                    <a href="https://x.com/trkglzgn"><i class="bx bx-x" ></i></a>
-                    <a href="https://www.instagram.com/trkgulezgin/"><i class="bx bxl-instagram" ></i></a>
-                </div>
-                <ul class="list">
+  <div class="filters" id="filters" data-reveal></div>
+  <div class="project-grid" id="project-grid"></div>
 
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
+  <div class="work__more" data-reveal>
+    <a href="https://github.com/gulezgin" target="_blank" rel="noopener" class="btn btn--ghost" data-magnetic>
+      github.com/gulezgin <svg class="ico"><use href="#i-external"></use></svg>
+    </a>
+  </div>
 
-                    <li>
-                        <a href="#">About Me</a>
-                    </li>
+  <noscript>
+    <p class="section__lead">Enable JavaScript to browse the project gallery, or visit
+      <a href="https://github.com/gulezgin">github.com/gulezgin</a>.</p>
+  </noscript>
+</section>
 
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+<!-- ================= Contact ================= -->
+<section class="section contact" id="contact">
+  <div class="section__head">
+    <p class="section__mark" aria-hidden="true"><svg class="ico"><use href="#i-spark"></use></svg><i></i></p>
+    <h2 class="section__title" data-split>Contact <em>Me</em></h2>
+  </div>
 
-                </ul>
-                <p class="copyright">
-                    ©2024 Tarık Gülezgin | Designed by Tarık Gülezgin | All rights reserved.
-                </p>
-            </footer>
-            <script src="script.js"></script>
-        </div>
-    </body>
+  <div class="contact__grid">
+    <div class="contact__side" data-reveal>
+      <a class="contact__row" href="https://www.linkedin.com/in/tar%C4%B1k-g%C3%BClezgin/" target="_blank" rel="noopener">
+        <svg class="ico"><use href="#i-linkedin"></use></svg>
+        <span><small>LinkedIn</small><b>tarık-gülezgin</b></span>
+        <svg class="ico ico--dim"><use href="#i-external"></use></svg>
+      </a>
+      <a class="contact__row" href="https://github.com/gulezgin" target="_blank" rel="noopener">
+        <svg class="ico"><use href="#i-github"></use></svg>
+        <span><small>GitHub</small><b>gulezgin</b></span>
+        <svg class="ico ico--dim"><use href="#i-external"></use></svg>
+      </a>
+      <a class="contact__row" href="https://medium.com/@gulezgin" target="_blank" rel="noopener">
+        <svg class="ico"><use href="#i-medium"></use></svg>
+        <span><small>Medium</small><b>@gulezgin</b></span>
+        <svg class="ico ico--dim"><use href="#i-external"></use></svg>
+      </a>
+      <a class="contact__row" href="https://x.com/trkglzgn" target="_blank" rel="noopener">
+        <svg class="ico"><use href="#i-x"></use></svg>
+        <span><small>X</small><b>trkglzgn</b></span>
+        <svg class="ico ico--dim"><use href="#i-external"></use></svg>
+      </a>
+      <a class="contact__row" href="https://www.instagram.com/trkgulezgin/" target="_blank" rel="noopener">
+        <svg class="ico"><use href="#i-instagram"></use></svg>
+        <span><small>Instagram</small><b>trkgulezgin</b></span>
+        <svg class="ico ico--dim"><use href="#i-external"></use></svg>
+      </a>
+    </div>
+
+    <form class="contact__form" id="contact-form" novalidate data-reveal style="--d:.1s">
+    <div class="field">
+      <input type="text" id="f-name" name="name" placeholder=" " required autocomplete="name">
+      <label for="f-name">Full Name</label>
+    </div>
+    <div class="field">
+      <input type="email" id="f-mail" name="email" placeholder=" " required autocomplete="email">
+      <label for="f-mail">Email</label>
+    </div>
+    <div class="field">
+      <input type="tel" id="f-phone" name="phone" placeholder=" " autocomplete="tel">
+      <label for="f-phone">Phone Number</label>
+    </div>
+    <div class="field">
+      <input type="text" id="f-subject" name="subject" placeholder=" " required>
+      <label for="f-subject">Subject</label>
+    </div>
+    <div class="field field--full">
+      <textarea id="f-msg" name="message" rows="6" placeholder=" " required></textarea>
+      <label for="f-msg">Your message</label>
+    </div>
+    <button class="btn btn--solid btn--block" type="submit" data-magnetic>
+      Send Message <svg class="ico"><use href="#i-arrow"></use></svg>
+    </button>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="footer">
+  <div class="footer__top">
+    <a href="#home" class="footer__brand">TARIK <b>GÜLEZGİN</b></a>
+    <nav class="footer__nav">
+      <a href="#services">Services</a>
+      <a href="#home">About Me</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  <ul class="socials socials--sm">
+    <li><a href="https://www.linkedin.com/in/tar%C4%B1k-g%C3%BClezgin/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico"><use href="#i-linkedin"></use></svg></a></li>
+        <li><a href="https://github.com/gulezgin" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ico"><use href="#i-github"></use></svg></a></li>
+        <li><a href="https://medium.com/@gulezgin" target="_blank" rel="noopener" aria-label="Medium"><svg class="ico"><use href="#i-medium"></use></svg></a></li>
+        <li><a href="https://x.com/trkglzgn" target="_blank" rel="noopener" aria-label="X"><svg class="ico"><use href="#i-x"></use></svg></a></li>
+        <li><a href="https://www.instagram.com/trkgulezgin/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico"><use href="#i-instagram"></use></svg></a></li>
+      </ul>
+  </div>
+  <p class="footer__copy">©2024 Tarık Gülezgin | Designed by Tarık Gülezgin | All rights reserved.</p>
+</footer>
+
+<button class="to-top" id="to-top" type="button" aria-label="Back to top">
+  <svg class="ico"><use href="#i-arrow"></use></svg>
+</button>
+
+<script src="script.js?v=4"></script>
+</body>
 </html>
