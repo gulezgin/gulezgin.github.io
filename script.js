@@ -88,6 +88,205 @@
     toastTimer = setTimeout(() => el.classList.remove('is-open'), 2600);
   }
 
+  /* ---------- Turkish translation ----------
+     Keys are the exact English strings on the page. Proper nouns (Spring, TensorFlow,
+     scikit-learn, company names, project names) are deliberately left untranslated.     */
+  const ROLES = {
+    en: CONFIG.roles,
+    tr: [
+      "Yazılım Mühendisi",
+      "Yapay Zeka Mühendisi",
+      "Mid. Python Geliştirici",
+      "Jr. Java Geliştirici",
+      "Mid. Web Geliştirici",
+      "Jr. Makine Öğrenmesi Mühendisi",
+      "Jr. Gömülü Sistemler Geliştirici",
+      "Mid. Veri Bilimci / Veri Mühendisi / Web Scraper"
+    ]
+  };
+
+  // headings carry inline markup, so they are swapped as HTML
+  const TR_TITLES = {
+    ".hero__title": ["Hey, It's <em>Tarık Gülezgin</em>", "Merhaba, Ben <em>Tarık Gülezgin</em>"],
+    "#education .section__title": ["Education", "Eğitim"],
+    "#experience .section__title": ["Experience", "Deneyim"],
+    "#services .section__title": ["Services", "Hizmetler"],
+    "#project .section__title": ["Projects", "Projeler"],
+    "#contact .section__title": ["Contact <em>Me</em>", "Bana <em>Ulaşın</em>"]
+  };
+
+  const TR = {
+    // navigation and buttons
+    "Home": "Ana Sayfa",
+    "Education": "Eğitim",
+    "Experience": "Deneyim",
+    "Services": "Hizmetler",
+    "Project": "Projeler",
+    "Projects": "Projeler",
+    "Contact": "İletişim",
+    "About Me": "Hakkımda",
+    "Hire": "İşe Al",
+    "Download CV": "CV İndir",
+    "scroll": "kaydır",
+    "I'm a": "Ben bir",
+
+    // project filters
+    "All": "Tümü",
+    "Data": "Veri",
+    "Automation": "Otomasyon",
+    "Security": "Güvenlik",
+    "Embedded": "Gömülü",
+
+    // contact form
+    "Full Name": "Ad Soyad",
+    "Email": "E-posta",
+    "Phone Number": "Telefon Numarası",
+    "Subject": "Konu",
+    "Your message": "Mesajınız",
+    "Send Message": "Mesaj Gönder",
+    "LinkedIn": "LinkedIn",
+
+    // footer
+    "©2024 Tarık Gülezgin | Designed by Tarık Gülezgin | All rights reserved.":
+      "©2024 Tarık Gülezgin | Tasarım: Tarık Gülezgin | Tüm hakları saklıdır.",
+
+    // hero
+    "I am a passionate software engineer who enjoys tackling challenges and creating products with new ideas. I have a strong foundation in Python, Java, C/C++/C#, JavaScript, and HTML/CSS. My career in computer technology began with cybersecurity and has continued with embedded systems. Currently, I am advancing in areas such as web scraping, artificial intelligence, and web development. I am looking for opportunities to work on various projects and contribute to the technology sector.":
+      "Zorluklarla uğraşmaktan ve yeni fikirlerle ürünler ortaya çıkarmaktan keyif alan, işine tutkuyla bağlı bir yazılım mühendisiyim. Python, Java, C/C++/C#, JavaScript ve HTML/CSS konularında sağlam bir temele sahibim. Bilgisayar teknolojilerindeki kariyerim siber güvenlikle başladı, gömülü sistemlerle devam etti. Şu anda web scraping, yapay zeka ve web geliştirme gibi alanlarda kendimi ilerletiyorum. Farklı projelerde çalışabileceğim ve teknoloji sektörüne katkı sunabileceğim fırsatlar arıyorum.",
+
+    // education
+    "University": "Üniversite",
+    "High School": "Lise",
+    "School": "Okul",
+    "As a result of the university entrance exam, I was admitted to Fırat University, which opened Turkey's first Software Engineering department. I am currently in my final year and continue my studies there. I am proud to be learning from distinguished professors and studying at a faculty that is ranked globally.":
+      "Üniversite giriş sınavı sonucunda, Türkiye'nin ilk Yazılım Mühendisliği bölümünü açan Fırat Üniversitesi'ne yerleştim. Şu anda son sınıftayım ve eğitimime burada devam ediyorum. Alanında değerli hocalardan ders almaktan ve dünya sıralamasında yer alan bir fakültede okumaktan gurur duyuyorum.",
+    "As a result of the TEOG exam, I succeeded in placing within the top 5% in Turkey, which allowed me to gain admission to Cumhuriyet Anatolian High School. I particularly excelled in my quantitative subjects and graduated from high school with a GPA of 78.6%.":
+      "TEOG sınavı sonucunda Türkiye genelinde ilk %5'e girmeyi başardım ve bu sayede Cumhuriyet Anadolu Lisesi'ne yerleştim. Özellikle sayısal derslerde başarılı oldum ve liseden 78,6 ortalamayla mezun oldum.",
+    "I attended elementary and middle school at Şeker School, which is close to my home. I had a successful school life, receiving high grades and achievement certificates. I graduated with a GPA of 80.5%.":
+      "İlkokul ve ortaokulu evime yakın olan Şeker Okulu'nda okudum. Yüksek notlar ve başarı belgeleriyle geçen başarılı bir okul hayatım oldu. 80,5 ortalamayla mezun oldum.",
+
+    // experience — dates
+    "February 2024 - Nowadays": "Şubat 2024 - Günümüz",
+    "April 2025 - Nowadays": "Nisan 2025 - Günümüz",
+    "September 2024 - March 2025": "Eylül 2024 - Mart 2025",
+    "October 2023 - October 2023": "Ekim 2023 - Ekim 2023",
+    "September 2023 - October 2023": "Eylül 2023 - Ekim 2023",
+    "August 2022 - September 2022": "Ağustos 2022 - Eylül 2022",
+
+    // experience — roles, places, descriptions
+    "Freelance Web Scraper | Web Developer | Software Consultant | Python Developer":
+      "Freelance Web Scraper | Web Geliştirici | Yazılım Danışmanı | Python Geliştirici",
+    "Recently, I have been working as a freelancer, assisting a company with web scraping tasks and generating income by creating and selling websites.":
+      "Son dönemde freelance olarak çalışıyorum; bir şirkete web scraping işlerinde destek veriyor, ayrıca web siteleri geliştirip satarak gelir elde ediyorum.",
+    "IT Specialist / Project Assistant": "BT Uzmanı / Proje Asistanı",
+    "Artificial Intelligence Engineer Intern": "Yapay Zeka Mühendisi Stajyeri",
+    "As an AI Engineer intern, I am working on various machine learning and artificial intelligence projects, focusing on developing algorithms for data analysis and improving decision-making systems.":
+      "Yapay zeka mühendisi stajyeri olarak çeşitli makine öğrenmesi ve yapay zeka projelerinde çalışıyorum; veri analizi için algoritmalar geliştirmeye ve karar verme sistemlerini iyileştirmeye odaklanıyorum.",
+    "Software Engineer Intern": "Yazılım Mühendisi Stajyeri",
+    "TÜBİTAK BİLGEM YTE, Ankara, Türkiye (Remote)": "TÜBİTAK BİLGEM YTE, Ankara, Türkiye (Uzaktan)",
+    "I participated in a one-month internship, focusing on various software development projects. This experience helped me enhance my coding skills and gain practical knowledge in software engineering.":
+      "Bir aylık staj programına katılarak çeşitli yazılım geliştirme projelerinde yer aldım. Bu deneyim kodlama becerilerimi geliştirmeme ve yazılım mühendisliğinde pratik bilgi kazanmama yardımcı oldu.",
+    "Computer Vision Engineer Intern": "Bilgisayarlı Görü Mühendisi Stajyeri",
+    "My second internship was at Başaran İleri Teknoloji, a branch of Aselsan located in Malatya. I worked in the telecommunications field and developed a small-scale image processing and facial recognition project, considering the operation of surveillance cameras. During this process, I gained experience not only in technical skills but also in communication and project management.":
+      "İkinci stajımı Malatya'da bulunan Aselsan bayisi Başaran İleri Teknoloji'de yaptım. Telekomünikasyon alanında çalıştım ve güvenlik kameralarının çalışma prensibini göz önünde bulundurarak küçük ölçekli bir görüntü işleme ve yüz tanıma projesi geliştirdim. Bu süreçte yalnızca teknik becerilerde değil, iletişim ve proje yönetimi konularında da deneyim kazandım.",
+    "Embedded Systems Engineer Intern": "Gömülü Sistemler Mühendisi Stajyeri",
+    "My first internship experience took place at Tümer Engineering, located in Hacettepe Technopolis. I worked on an AHRS system project for avionics systems, specifically for UAVs, in the defense industry. This project was a challenging and technically complex process, but through this experience, I developed my problem-solving skills and gained a deeper understanding of the importance of teamwork.":
+      "İlk staj deneyimimi Hacettepe Teknokent'te bulunan Tümer Mühendislik'te yaşadım. Savunma sanayisinde, özellikle İHA'lara yönelik aviyonik sistemler için bir AHRS sistemi projesinde çalıştım. Teknik olarak zorlayıcı ve karmaşık bir süreçti; bu deneyim sayesinde problem çözme becerilerimi geliştirdim ve takım çalışmasının önemini daha iyi kavradım.",
+
+    // services
+    "Python Developer": "Python Geliştirici",
+    "As a Python Developer, I specialize in designing and developing robust applications using Python. With a strong foundation in various Python libraries and frameworks, I excel in creating scalable and efficient solutions. My experience includes developing web applications, automating tasks, and implementing data processing pipelines. I am passionate about leveraging Python to solve complex problems and continuously improving my skills through hands-on projects and learning.":
+      "Python Geliştirici olarak Python ile sağlam uygulamalar tasarlama ve geliştirme konusunda uzmanlaşıyorum. Çeşitli Python kütüphaneleri ve framework'lerindeki güçlü temelim sayesinde ölçeklenebilir ve verimli çözümler üretiyorum. Deneyimlerim arasında web uygulamaları geliştirmek, görevleri otomatikleştirmek ve veri işleme hatları kurmak yer alıyor. Python'u karmaşık problemleri çözmek için kullanmaya tutkuyla bağlıyım; uygulamalı projeler ve sürekli öğrenmeyle kendimi geliştiriyorum.",
+    "Java Developer": "Java Geliştirici",
+    "As a Java Developer, I focus on building high-performance, scalable applications using Java. My expertise includes working with Java frameworks and technologies such as Spring , and I have experience in developing both web and desktop applications. I am skilled in designing efficient algorithms, managing databases, and ensuring code quality through best practices. Passionate about problem-solving and software design, I continuously seek to enhance my skills and contribute to innovative projects.":
+      "Java Geliştirici olarak Java ile yüksek performanslı ve ölçeklenebilir uygulamalar geliştirmeye odaklanıyorum. Uzmanlığım Spring gibi Java framework'leri ve teknolojileriyle çalışmayı kapsıyor; hem web hem de masaüstü uygulamaları geliştirme deneyimim var. Verimli algoritmalar tasarlama, veritabanlarını yönetme ve en iyi uygulamalarla kod kalitesini güvence altına alma konularında yetkinim. Problem çözmeye ve yazılım tasarımına tutkuyla bağlı biri olarak becerilerimi sürekli geliştirmeyi ve yenilikçi projelere katkı sunmayı hedefliyorum.",
+    "Web Developer": "Web Geliştirici",
+    "As a front-end developer, I excel in creating visually appealing and user-friendly websites using HTML, CSS, and JavaScript. I am skilled in building responsive layouts, implementing interactive features, and ensuring cross-browser compatibility. My experience extends to WordPress development, where I customize themes, build plugins, and optimize websites for performance and SEO. My goal is to combine technical expertise with creative design to deliver engaging web experiences and enhance user satisfaction.":
+      "Front-end geliştirici olarak HTML, CSS ve JavaScript kullanarak görsel açıdan çekici ve kullanıcı dostu web siteleri oluşturuyorum. Duyarlı (responsive) tasarımlar kurmak, etkileşimli özellikler geliştirmek ve tarayıcılar arası uyumluluğu sağlamak konusunda yetkinim. Deneyimim WordPress geliştirmeyi de kapsıyor; tema özelleştiriyor, eklenti geliştiriyor ve siteleri performans ile SEO açısından optimize ediyorum. Amacım teknik uzmanlığı yaratıcı tasarımla birleştirerek etkileyici web deneyimleri sunmak ve kullanıcı memnuniyetini artırmak.",
+    "Machine Learning Engineer": "Makine Öğrenmesi Mühendisi",
+    "As a Machine Learning Engineer, I specialize in designing, developing, and deploying machine learning models to solve complex problems and drive data-driven decisions. My expertise includes working with a variety of machine learning frameworks and libraries such as TensorFlow, Natural Language Processing (NLP), PyTorch, and scikit-learn. I am proficient in data preprocessing, feature engineering, model training, and evaluation. Passionate about leveraging algorithms and statistical methods, I continuously explore new techniques and technologies to enhance model performance and deliver impactful solutions.":
+      "Makine Öğrenmesi Mühendisi olarak karmaşık problemleri çözmek ve veriye dayalı kararlar almak için makine öğrenmesi modelleri tasarlama, geliştirme ve dağıtma konusunda uzmanlaşıyorum. Uzmanlığım TensorFlow, Doğal Dil İşleme (NLP), PyTorch ve scikit-learn gibi çeşitli makine öğrenmesi framework'leri ve kütüphaneleriyle çalışmayı kapsıyor. Veri ön işleme, öznitelik mühendisliği, model eğitimi ve değerlendirme konularında yetkinim. Algoritmalardan ve istatistiksel yöntemlerden yararlanmaya tutkuyla bağlı olarak model performansını artırmak ve etkili çözümler sunmak için yeni teknik ve teknolojileri sürekli araştırıyorum.",
+    "Embedded Systems Developer": "Gömülü Sistemler Geliştirici",
+    "As an Embedded Systems Developer, I specialize in designing and implementing robust embedded solutions for various applications. My expertise includes working with microcontrollers, real-time operating systems (RTOS), and low-level programming in C/C++ to develop efficient and reliable firmware. I have experience in integrating hardware with software, optimizing system performance, and debugging complex issues. Passionate about creating innovative and high-performance embedded systems, I continuously seek to advance my skills and contribute to cutting-edge projects.":
+      "Gömülü Sistemler Geliştirici olarak farklı uygulamalar için sağlam gömülü çözümler tasarlama ve hayata geçirme konusunda uzmanlaşıyorum. Uzmanlığım mikrodenetleyiciler, gerçek zamanlı işletim sistemleri (RTOS) ve verimli, güvenilir firmware geliştirmek için C/C++ ile düşük seviyeli programlamayı kapsıyor. Donanımı yazılımla entegre etme, sistem performansını optimize etme ve karmaşık hataları ayıklama deneyimim var. Yenilikçi ve yüksek performanslı gömülü sistemler kurmaya tutkuyla bağlı olarak becerilerimi sürekli ilerletmeyi ve öncü projelere katkı sunmayı amaçlıyorum.",
+    "Software Tester": "Yazılım Test Uzmanı",
+    "As a Software Tester, I am dedicated to ensuring the quality and reliability of software applications through comprehensive testing and evaluation. My expertise includes creating detailed test plans, executing test cases, and identifying and documenting defects. Passionate about improving user experiences and software quality, I continuously refine my skills and stay updated with industry best practices.":
+      "Yazılım Test Uzmanı olarak kapsamlı test ve değerlendirmelerle yazılım uygulamalarının kalitesini ve güvenilirliğini sağlamaya kendimi adadım. Uzmanlığım ayrıntılı test planları hazırlamayı, test senaryolarını yürütmeyi, hataları tespit edip belgelemeyi kapsıyor. Kullanıcı deneyimini ve yazılım kalitesini iyileştirmeye tutkuyla bağlı olarak becerilerimi sürekli geliştiriyor ve sektördeki en iyi uygulamaları takip ediyorum.",
+    "Cybersecurity Engineer": "Siber Güvenlik Mühendisi",
+    "As a Cybersecurity Engineer, I am committed to protecting organizations from cyber threats and ensuring the security of their digital assets. My expertise includes designing and implementing security measures, conducting risk assessments, and responding to security incidents. I am proficient in various cybersecurity tools and technologies, including firewalls, intrusion detection systems (IDS), and encryption protocols. With a strong foundation in network security, vulnerability management, and incident response, I focus on safeguarding information systems and maintaining compliance with industry standards. Passionate about staying ahead of evolving threats, I continuously enhance my skills and knowledge in cybersecurity.":
+      "Siber Güvenlik Mühendisi olarak kurumları siber tehditlerden korumaya ve dijital varlıklarının güvenliğini sağlamaya kendimi adadım. Uzmanlığım güvenlik önlemleri tasarlayıp uygulamayı, risk değerlendirmeleri yapmayı ve güvenlik olaylarına müdahale etmeyi kapsıyor. Güvenlik duvarları, saldırı tespit sistemleri (IDS) ve şifreleme protokolleri dahil olmak üzere çeşitli siber güvenlik araç ve teknolojilerinde yetkinim. Ağ güvenliği, zafiyet yönetimi ve olay müdahalesi konularındaki güçlü temelimle bilgi sistemlerini korumaya ve sektör standartlarına uyumu sürdürmeye odaklanıyorum. Gelişen tehditlerin bir adım önünde olmaya tutkuyla bağlı olarak siber güvenlik alanındaki bilgi ve becerilerimi sürekli artırıyorum.",
+    "Data Scientist / Data Engineer / Web Scraper": "Veri Bilimci / Veri Mühendisi / Web Scraper",
+    "As a Data Scientist, Data Engineer, and Web Scraper, I specialize in extracting, processing, and analyzing data to drive informed decision-making and uncover valuable insights. My expertise spans data wrangling, statistical analysis, and machine learning, utilizing tools such as Python, R, SQL, and various data visualization libraries. I am skilled in designing and implementing data pipelines, managing large datasets, and developing web scraping solutions to collect and analyze web-based data. With a strong focus on transforming raw data into actionable intelligence, I continuously seek to improve my skills and stay abreast of the latest advancements in data science and engineering.":
+      "Veri Bilimci, Veri Mühendisi ve Web Scraper olarak veriyi çıkarma, işleme ve analiz etme konusunda uzmanlaşıyorum; böylece bilinçli kararlar alınmasını sağlıyor ve değerli içgörüler ortaya çıkarıyorum. Uzmanlığım veri düzenleme, istatistiksel analiz ve makine öğrenmesini kapsıyor; bu süreçte Python, R, SQL ve çeşitli veri görselleştirme kütüphanelerinden yararlanıyorum. Veri hatları tasarlayıp kurma, büyük veri kümelerini yönetme ve web tabanlı veriyi toplayıp analiz etmek için web scraping çözümleri geliştirme konularında yetkinim. Ham veriyi eyleme dönüştürülebilir bilgiye çevirmeye odaklanarak becerilerimi geliştirmeye ve veri bilimi ile mühendisliğindeki güncel gelişmeleri takip etmeye devam ediyorum."
+  };
+
+  // short interface strings that live in JS rather than in the markup
+  const UI = {
+    dark:      ["Dark mode", "Koyu tema"],
+    light:     ["Light mode", "Açık tema"],
+    musicOn:   ["Music on", "Müzik açık"],
+    musicOff:  ["Music off", "Müzik kapalı"],
+    musicFail: ["Your browser blocked audio playback", "Tarayıcınız ses çalmayı engelledi"],
+    formError: ["Please fill in every field correctly", "Lütfen tüm alanları eksiksiz doldurun"],
+    mailOpen:  ["Opening your mail app…", "Mail uygulamanız açılıyor…"],
+    langOn:    ["Site in English", "Site Türkçe"]
+  };
+
+  let LANG = 'en';
+  const t = key => UI[key][LANG === 'tr' ? 1 : 0];
+
+  /* ---------- language switch ---------- */
+  let i18nNodes = [];
+
+  function collectI18n() {
+    i18nNodes = [];
+    $$('h1, h2, h3, h4, p, span, a, li, label, button, small, b, div').forEach(el => {
+      [...el.childNodes].forEach(node => {
+        if (node.nodeType !== Node.TEXT_NODE) return;
+        const key = node.textContent.trim();
+        if (!key || !TR[key]) return;
+        if (el.closest('[data-split]')) return;          // headings are swapped as HTML
+        i18nNodes.push({ node, en: node.textContent, tr: node.textContent.replace(key, TR[key]) });
+      });
+    });
+  }
+
+  function applyLang(lang) {
+    LANG = lang === 'tr' ? 'tr' : 'en';
+    document.documentElement.lang = LANG;
+
+    i18nNodes.forEach(item => { item.node.textContent = LANG === 'tr' ? item.tr : item.en; });
+
+    Object.entries(TR_TITLES).forEach(([sel, [en, tr]]) => {
+      const el = $(sel);
+      if (!el) return;
+      const revealed = el.classList.contains('is-in');   // keep headings that have not
+      el.innerHTML = LANG === 'tr' ? tr : en;            // scrolled into view still hidden,
+      splitText(el);                                     // so their entrance still plays
+      if (revealed) el.classList.add('is-in');
+    });
+
+    const btn = $('#lang-toggle');
+    if (btn) {
+      btn.textContent = LANG === 'tr' ? 'EN' : 'TR';
+      btn.setAttribute('aria-label', LANG === 'tr' ? 'Switch to English' : 'Türkçeye geç');
+    }
+
+    if (heroStarted) startTypewriter();
+  }
+
+  function initI18n() {
+    LANG = localStorage.getItem('tg-lang') === 'tr' ? 'tr' : 'en';
+    collectI18n();
+    applyLang(LANG);
+
+    $('#lang-toggle')?.addEventListener('click', () => {
+      applyLang(LANG === 'tr' ? 'en' : 'tr');
+      localStorage.setItem('tg-lang', LANG);
+      toast(t('langOn'));
+    });
+  }
+
   /* ---------- preloader ---------- */
   function initPreloader() {
     const box = $('#preloader');
@@ -130,9 +329,12 @@
     setTimeout(finish, 5000);
   }
 
+  let heroStarted = false;
+
   function startHeroSequence() {
+    heroStarted = true;
     $$('#home [data-reveal], #home [data-split]').forEach(el => el.classList.add('is-in'));
-    initTypewriter();
+    startTypewriter();
   }
 
   /* ---------- theme ---------- */
@@ -148,7 +350,7 @@
       localStorage.setItem('tg-theme', next);
       const meta = $('meta[name="theme-color"]');
       if (meta) meta.setAttribute('content', next === 'dark' ? '#07080c' : '#f4f5f9');
-      toast(next === 'dark' ? 'Dark mode' : 'Light mode');
+      toast(next === 'dark' ? t('dark') : t('light'));
     });
   }
 
@@ -226,19 +428,23 @@
   }
 
   /* ---------- typewriter ---------- */
-  function initTypewriter() {
-    const el = $('#typewriter');
-    if (!el || el.dataset.started) return;
-    el.dataset.started = '1';
+  let typeTimer = null;
 
-    if (REDUCED) { el.textContent = CONFIG.roles[0]; return; }
+  function startTypewriter() {
+    const el = $('#typewriter');
+    if (!el) return;
+    clearTimeout(typeTimer);
+
+    const words = ROLES[LANG] || ROLES.en;
+    if (REDUCED) { el.textContent = words[0]; return; }
 
     let wordIndex = 0;
     let charIndex = 0;
     let deleting = false;
+    el.textContent = '';
 
     const loop = () => {
-      const word = CONFIG.roles[wordIndex];
+      const word = words[wordIndex];
       charIndex += deleting ? -1 : 1;
       el.textContent = word.slice(0, charIndex);
 
@@ -246,10 +452,10 @@
       if (!deleting && charIndex === word.length) { delay = 1600; deleting = true; }
       else if (deleting && charIndex === 0) {
         deleting = false;
-        wordIndex = (wordIndex + 1) % CONFIG.roles.length;
+        wordIndex = (wordIndex + 1) % words.length;
         delay = 320;
       }
-      setTimeout(loop, delay);
+      typeTimer = setTimeout(loop, delay);
     };
     loop();
   }
@@ -578,7 +784,7 @@
         if (!ok && valid) { field.focus(); valid = false; }
       });
 
-      if (!valid) { toast('Please fill in every field correctly'); return; }
+      if (!valid) { toast(t('formError')); return; }
 
       const name = $('#f-name').value.trim();
       const mail = $('#f-mail').value.trim();
@@ -589,7 +795,7 @@
 
       window.location.href =
         'mailto:' + CONFIG.email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      toast('Opening your mail app…');
+      toast(t('mailOpen'));
     });
 
     $$('#contact-form input, #contact-form textarea').forEach(field => {
@@ -609,14 +815,14 @@
         try {
           await audio.play();
           btn.setAttribute('aria-pressed', 'true');
-          toast('Music on');
+          toast(t('musicOn'));
         } catch {
-          toast('Your browser blocked audio playback');
+          toast(t('musicFail'));
         }
       } else {
         audio.pause();
         btn.setAttribute('aria-pressed', 'false');
-        toast('Music off');
+        toast(t('musicOff'));
       }
     });
   }
@@ -664,5 +870,6 @@
     initContact();
     initSound();
     initMisc();
+    initI18n();
   });
 })();
