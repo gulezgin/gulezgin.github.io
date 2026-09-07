@@ -178,7 +178,7 @@
       "Freelance Web Scraper | Web Geliştirici | Yazılım Danışmanı | Python Geliştirici",
     "Recently, I have been working as a freelancer, assisting a company with web scraping tasks and generating income by creating and selling websites.":
       "Son dönemde freelance olarak çalışıyorum; bir şirkete web scraping işlerinde destek veriyor, ayrıca web siteleri geliştirip satarak gelir elde ediyorum.",
-    "IT Specialist / Project Assistant": "BT Uzmanı / Proje Asistanı",
+    "IT Specialist | Project Assistant": "BT Uzmanı | Proje Asistanı",
     "I provided consultancy on IT infrastructure, website setup, server room installation, data analysis, software requirements, and software-related matters. By supporting communication and stakeholder management, I assisted with budgeting, procurement activities, and decision-making processes.":
        "BT altyapısı, web sitesi kurulumu, sunucu odası kurulumu, veri analizi, yazılım gereksinimleri ve yazılım konularında danışmanlık sağladım. İletişim ve paydaş yönetimini destekleyerek bütçeleme ve satın alma faaliyetlerine, karar alma süreçlerine yardımcı oldum.",
     "Artificial Intelligence Engineer Intern": "Yapay Zeka Mühendisi Stajyeri",
