@@ -53,7 +53,8 @@
     { t: "Speech-to-Text", c: 'ai', i: 'images/stotxt.png', u: 'https://github.com/gulezgin/speech-to-text_v0.1', a: "speech-to-text_v0.1" },
     { t: "Hukuk Asistanı Themis - Proof of Concept-r", c: 'ai', i: 'images/themis.png', u: 'https://github.com/gulezgin/Hukuk-Asistan-Themis-Proof-of-Concept-', a: "Hukuk-Asistan-Themis-Proof-of-Concept-" },
     { t: "WordPool TR-EN", c: 'tools', i: 'images/eng-tr.png', u: 'https://github.com/gulezgin/WordPool-TR-EN', a: "WordPool-TR-EN" },
-    { t: "WEBSITE", c: 'web', i: 'images/rentacar.png', u: 'https://puturgerentacar.com.tr/', a: "WEBSITE" }
+    { t: "WEBSITE", c: 'web', i: 'images/rentacar.png', u: 'https://puturgerentacar.com.tr/', a: "WEBSITE" },
+    { t: "WEBSITE", c: 'web', i: 'images/maklidas.png', u: 'https://www.maklidas.com.tr/', a: "WEBSITE" }
   ];
 
   const CAT_LABEL = {
