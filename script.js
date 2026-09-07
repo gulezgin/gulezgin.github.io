@@ -183,7 +183,7 @@
        "BT altyapısı, web sitesi kurulumu, sunucu odası kurulumu, veri analizi, yazılım gereksinimleri ve yazılım konularında danışmanlık sağladım. İletişim ve paydaş yönetimini destekleyerek bütçeleme ve satın alma faaliyetlerine, karar alma süreçlerine yardımcı oldum.",
     "Artificial Intelligence Engineer Intern": "Yapay Zeka Mühendisi Stajyeri",
     "As an AI Engineer Intern, I worked on a chatbot product that translates SQL queries into natural language, focusing on developing algorithms for data analysis and improving decision-making systems. I contributed to various machine learning and AI projects.":
-      "YYapay Zeka Mühendisi Stajyeri olarak, veri analizi için algoritmalar geliştirmeye ve karar verme sistemlerini iyileştirmeye odaklanarak, SQL sorgularını konuşma diline çeviren bir chatbot ürününde görev aldım. Çeşitli makine öğrenimi ve yapay zeka projelerinde çalıştım.",
+      "Yapay Zeka Mühendisi Stajyeri olarak, veri analizi için algoritmalar geliştirmeye ve karar verme sistemlerini iyileştirmeye odaklanarak, SQL sorgularını konuşma diline çeviren bir chatbot ürününde görev aldım. Çeşitli makine öğrenimi ve yapay zeka projelerinde çalıştım.",
     "Software Engineer Intern": "Yazılım Mühendisi Stajyeri",
     "TÜBİTAK BİLGEM YTE, Ankara, Türkiye (Remote)": "TÜBİTAK BİLGEM YTE, Ankara, Türkiye (Uzaktan)",
     "I participated in a one-month internship, focusing on various software development projects. This experience helped me enhance my coding skills and gain practical knowledge in software engineering.":
