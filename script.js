@@ -156,16 +156,19 @@
       "Karmaşık problemleri çözmeyi, yenilikçi ve değer odaklı ürünler geliştirmeyi seven bir mühendisim. Kariyerime siber güvenlik alanında başladım, ardından gömülü sistemlere yöneldim ve son yıllarda yapay zeka mühendisliğinde derinleştim. Bu çok yönlü geçmiş, teknik problemlere farklı açılardan bakabilmemi sağlıyor. Şu anda Gopa Danışmanlık bünyesinde AB fonlu bir projede BT uzmanı ve proje asistanı olarak görev alıyorum. Bunun yanı sıra serbest çalışan olarak web geliştirme, özel yazılım/uygulama geliştirme, yapay zeka çözümleri, veri kazıma ve Python tabanlı proje geliştirme hizmetleri sunuyorum. Hedefim, çeşitli ve zorlu projelerde yer alma fırsatı yakalamak.",
 
     // education
-    "University": "Üniversite",
+    "Master's Degree /n Artificial Intelligence and Robotics ": "Yüksek Lisans /n Yapay Zeka ve Robotik",",
+    "Bachelor's Degree": "Lisans",
     "High School": "Lise",
-    "School": "Okul",
+    "Elementary / Middle School": "İlkokul/ Ortaokul",
+     "In September 2026, I began my master's degree in Artificial Intelligence and Robotics at Fırat University, where I am continuing to develop my knowledge and expertise in artificial intelligence, robotics, and related technologies.":
+      "Eylül 2026'da Fırat Üniversitesi'nde Yapay Zeka ve Robotik alanında yüksek lisans eğitimime başladım. Eğitimime devam ederken yapay zeka, robotik ve ilgili teknolojiler alanındaki bilgi ve yetkinliklerimi geliştirmeyi sürdürüyorum.",
     "Through the university entrance exam, I was admitted to Fırat University — home to Turkey's first Software Engineering department — and graduated in 2025 with a GPA of 2.77. I'm proud to have studied under distinguished professors at a globally ranked faculty.":
       "Üniversite giriş sınavı sonucunda, Türkiye'nin ilk Yazılım Mühendisliği bölümünü açan Fırat Üniversitesi'ne kabul edildim ve buradan 2025 yılında 2.77 not ortalaması ile mezun oldum. Seçkin profesörlerden ders almaktan ve küresel sıralamada yer alan bir fakültededen mezun olmaktan gurur duyuyorum.",
     "As a result of the TEOG exam, I succeeded in placing within the top 5% in Turkey, which allowed me to gain admission to Cumhuriyet Anatolian High School. I particularly excelled in my quantitative subjects and graduated from high school with a GPA of 78.6%.":
       "TEOG sınavı sonucunda Türkiye genelinde ilk %5'e girmeyi başardım ve bu sayede Cumhuriyet Anadolu Lisesi'ne yerleştim. Özellikle sayısal derslerde başarılı oldum ve liseden 78,6 ortalamayla mezun oldum.",
     "I attended elementary and middle school at Şeker School, which is close to my home. I had a successful school life, receiving high grades and achievement certificates. I graduated with a GPA of 80.5%.":
       "İlkokul ve ortaokulu evime yakın olan Şeker Okulu'nda okudum. Yüksek notlar ve başarı belgeleriyle geçen başarılı bir okul hayatım oldu. 80,5 ortalamayla mezun oldum.",
-
+       
     // experience — dates
     "February 2024 - Nowadays": "Şubat 2024 - Günümüz",
     "April 2025 - Nowadays": "Nisan 2025 - Günümüz",
