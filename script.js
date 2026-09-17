@@ -157,7 +157,7 @@
       "Karmaşık problemleri çözmeyi, yenilikçi ve değer odaklı ürünler geliştirmeyi seven bir mühendisim. Kariyerime siber güvenlik alanında başladım, ardından gömülü sistemlere yöneldim ve son yıllarda yapay zeka mühendisliğinde derinleştim. Bu çok yönlü geçmiş, teknik problemlere farklı açılardan bakabilmemi sağlıyor. Şu anda Gopa Danışmanlık bünyesinde AB fonlu bir projede BT uzmanı ve proje asistanı olarak görev alıyorum. Bunun yanı sıra serbest çalışan olarak web geliştirme, özel yazılım/uygulama geliştirme, yapay zeka çözümleri, veri kazıma ve Python tabanlı proje geliştirme hizmetleri sunuyorum. Hedefim, çeşitli ve zorlu projelerde yer alma fırsatı yakalamak.",
      
     // education
-    "Bachelor's Degree": "Lisans",
+    "Bachelor's Degree": "Lisans", "Software Engineering": "Yazılım Mühendisliği",
     "High School": "Lise",
     "Elementary - Middle School": "İlkokul - Ortaokul Okul",
     "Master's Degree": "Yüksek Lisans", "Artificial Intelligence and Robotics" : "Yapay Zeka ve Robotik",
