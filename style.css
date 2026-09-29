@@ -611,9 +611,12 @@ main, .header, .footer, .preloader, .to-top { position: relative; z-index: 1; }
 .marquee__track {
   display: flex;
   align-items: center;
-  gap: 2rem;
   width: max-content;
-  animation: slide 42s linear infinite;
+  animation: slide 90s linear infinite;
+}
+.marquee__track > * {
+  flex-shrink: 0;
+  margin-right: 2rem;
 }
 .marquee:hover .marquee__track { animation-play-state: paused; }
 .marquee span {
