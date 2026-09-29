@@ -24,6 +24,12 @@
       'Mid. Data Scientist / Data Engineer / Web Scraper'
     ]
   };
+
+   document.querySelectorAll('.marquee__track').forEach(t => {
+  t.innerHTML += t.innerHTML;
+});
+
+   
   /* ---------- projects: titles, images and links exactly as on the old site ----------
      c = category, used only by the filter buttons                                      */
   const PROJECTS = [
